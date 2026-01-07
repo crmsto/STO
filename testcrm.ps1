@@ -9,9 +9,9 @@ $Root = $PSScriptRoot
 if (-not (Test-Path -LiteralPath $Root)) { Fail "Script folder not found." }
 Set-Location -LiteralPath $Root
 
-$OWNER      = "testcrmservis"
+$OWNER      = "crmsto"
 $REPO       = "STO"
-$USER_NAME  = "testcrmservis"
+$USER_NAME  = "crmsto"
 $USER_EMAIL = "testcrmservis@gmail.com"
 $REMOTE     = "https://github.com/$OWNER/$REPO.git"
 
