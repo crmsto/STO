@@ -204,8 +204,8 @@ const fillSlusarInputs = (data: any, selectedName: string) => {
     passwordInput.disabled = false;
   }
   if (accessSelect && data?.Доступ) {
-    // Якщо вибрано "Бемба В. Я", встановлюємо Адміністратор доступ і блокуємо селект
-    if (normalizeName(selectedName) === normalizeName("Бемба В. Я")) {
+    // Якщо вибрано "Тест", встановлюємо Адміністратор доступ і блокуємо селект
+    if (normalizeName(selectedName) === normalizeName("Тест")) {
       accessSelect.value = "Адміністратор";
       accessSelect.disabled = true;
     } else {

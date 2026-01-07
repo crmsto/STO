@@ -1,34 +1,3 @@
-// ======= Блокування прав для адміністратора (інпут "Тест") =======
-document.addEventListener("DOMContentLoaded", function () {
-  const input = document.getElementById(
-    "search-input-all_other_bases"
-  ) as HTMLInputElement | null;
-  const select = document.getElementById(
-    "slusar-access"
-  ) as HTMLSelectElement | null;
-  const button = document.getElementById(
-    "modeToggleLabel"
-  ) as HTMLButtonElement | null;
-
-  function checkAdminLock() {
-    if (!input || !select || !button) return;
-    if (input.value.trim() === "Тест") {
-      select.value = "Адміністратор";
-      select.disabled = true;
-      button.disabled = true;
-      button.style.cursor = "not-allowed";
-      button.style.opacity = "0.6";
-    } else {
-      select.disabled = false;
-      button.disabled = false;
-      button.style.cursor = "pointer";
-      button.style.opacity = "1";
-    }
-  }
-
-  checkAdminLock();
-  if (input) input.addEventListener("input", checkAdminLock);
-});
 // src\ts\roboha\zakaz_naraudy\inhi\ctvorennia_papku_googleDrive..ts
 
 import { supabase } from "../../../vxid/supabaseClient";
