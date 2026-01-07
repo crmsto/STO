@@ -12,7 +12,7 @@ export async function signInWithGoogle() {
   const { error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {
-      redirectTo: "https://.github.io/STO/",
+      redirectTo: "https://crmsto.github.io/STO/",
     },
   });
 
