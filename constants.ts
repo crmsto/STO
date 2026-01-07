@@ -5,8 +5,7 @@
  * Ці адреси також захищені на рівні RLS політик Supabase
  */
 export const ALLOWED_EMAILS = [
-  "veron3373v@gmail.com",
-  "bsbraclavec@gmail.com",
+  "testcrmservis@gmail.com",
 ] as const;
 
 /**

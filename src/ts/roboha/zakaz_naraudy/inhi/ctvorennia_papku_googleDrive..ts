@@ -9,11 +9,11 @@ declare let google: any;
 
 // ------- Константи -------
 const CLIENT_ID =
-  "467665595953-63b13ucmm8ssbm2vfjjr41e3nqt6f11a.apps.googleusercontent.com";
+  "931410277664-08iepaa40jrrn076m6dnn6oeci8vpo34.apps.googleusercontent.com";
 const SCOPES = "https://www.googleapis.com/auth/drive.file";
 
 const ALLOWED_ORIGINS = [
-  "https://veron3373.github.io",
+  "https://crmsto.github.io",
   "http://localhost:3000",
   "http://127.0.0.1:3000",
   "http://localhost:5173",
